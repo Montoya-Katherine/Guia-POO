@@ -32,11 +32,11 @@ public class Rectangulo {
 
     public void crearRectangulo(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese base del triangulo");
-        this.setBase(scanner.nextInt());
+        System.out.println("Ingrese base del rectangulo");
+        base = scanner.nextInt();
 
-        System.out.println("ingrese la altura del triangulo");
-        this.setAltura(scanner.nextInt());
+        System.out.println("ingrese la altura del rectangulo");
+        altura= scanner.nextInt();
 
     }
 

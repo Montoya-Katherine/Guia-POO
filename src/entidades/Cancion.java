@@ -35,7 +35,7 @@ public class Cancion {
         this.setTitulo(scanner.nextLine());
 
         System.out.println("Ingrese el autor");
-        this.setAutor(scanner.nextLine());
+        this.setAutor(scanner.nextLine());// se utilizo el set en el anterior ejerccio xq se setea desde el main, aca esta en la misma clase no es necesario hacerlo
     }
 
     public void mostrarCancion(){

@@ -1,16 +1,28 @@
-import entidades.Cancion;
-import entidades.Libro;
-import entidades.Operacion;
-import entidades.Rectangulo;
+import entidades.*;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] arg){
-        Rectangulo rectangulo = new Rectangulo();
+        Cuenta cuenta = new Cuenta();
+        cuenta.crearCuenta();
+
+        cuenta.ingresarDinero(100);
+        cuenta.consultarSaldo();
+        cuenta.ingresarDinero(200);
+        cuenta.consultarSaldo();
+        cuenta.retirarDinero(500);
+        cuenta.consultarSaldo();
+        cuenta.extraccionRapida();
+        cuenta.consultarSaldo();
+        cuenta.consultarDatos();
+
+        /*Rectangulo rectangulo = new Rectangulo();
         rectangulo.crearRectangulo();
         rectangulo.calcularArea();
-        /*Operacion operacion = new Operacion();
+
+
+        Operacion operacion = new Operacion();
         operacion.crearOperacion();
         operacion.sumar();
         operacion.restar();
