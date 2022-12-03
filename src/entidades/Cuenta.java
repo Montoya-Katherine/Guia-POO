@@ -21,22 +21,27 @@ public class Cuenta {
     }
 
     public void setNumeroCuenta(int numeroCuenta) {
+
         this.numeroCuenta = numeroCuenta;
     }
 
     public int getDni() {
+
         return dni;
     }
 
     public void setDni(int dni) {
+
         this.dni = dni;
     }
 
     public double getSaldoActual() {
+
         return saldoActual;
     }
 
     public void setSaldoActual(double saldoActual) {
+
         this.saldoActual = saldoActual;
     }
 
@@ -48,7 +53,7 @@ public class Cuenta {
         System.out.println("Ingrese su numero de cuenta");
         numeroCuenta = scanner.nextInt();
 
-        System.out.println("Ingrese saldo actual");
+        System.out.println("Ingrese deposito inicial actual");
         saldoActual = scanner.nextDouble();
 
     }
