@@ -6,7 +6,10 @@ public class Cafetera {
     private int capacidadMax;
     private int cantidadActual;
 
-    public Cafetera(){}
+    public Cafetera(){
+
+
+    }
 
     public Cafetera(int capacidadMax, int cantidadActual){
         this.capacidadMax = capacidadMax;
@@ -61,6 +64,12 @@ public class Cafetera {
 
         this.setCantidadActual(cantidadActual + cantCafe);
         return cantidadActual;
+    }
+    // el metodo agrega cafe a la cafetera
+    public void agregarCafe2(int cantidadCafe) {
+        cantidadActual+= cantidadCafe;
+        System.out.println("La cafetera tiene la capacidad actual de :" + cantidadActual);
 
     }
+
 }

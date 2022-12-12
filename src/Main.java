@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] arg){
+        Persona persona = new Persona();
+        persona.crearPersona();
+        System.out.println(persona.calcularImc());
+        System.out.println("La persona es mayor de edad " +  persona.esMayorDeEdad());
+
 
 
 //Cafetera -  aca mi duda es en el ultimo metodo de agregar cafe,
 // yo por parametro cuando lo invoco al metodo le paso el valor 0
 // para luego poder inicializar con un scanner  la variable para que el valor lo ingrese el usuario
 
-       Cafetera cafetera= new Cafetera(1000, 200);
+       /*Cafetera cafetera= new Cafetera(1000, 200);
         System.out.println( cafetera.llenarCafetera());
         cafetera.servirTaza(1200);
         System.out.println(cafetera.vaciarCafetera());
